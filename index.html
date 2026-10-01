@@ -1,0 +1,289 @@
+<!doctype html><html lang="sk"><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<title>Piváreň Záhrada · piváreň so záhradou v Košiciach — neoficiálny návrh</title>
+<meta name="description" content="Neoficiálny návrh homepage pre Piváreň Záhrada, Kukučínova 13, Košice.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Asap+Condensed:wght@400;500;600;700&family=Rammetto+One&display=swap" rel="stylesheet">
+<style>
+:root{
+  --night:#0b1712;   /* záhrada po zotmení */
+  --garden:#112319;
+  --leaf:#1b3427;
+  --hedge:#07100c;
+  --foam:#f4eddc;    /* pena */
+  --mute:#a7b5a2;
+  --amber:#ffb84d;   /* svetlo žiaroviek / pivo */
+  --orange:#f07a2c;  /* akcent */
+  --line:rgba(244,237,220,.16);
+  --disp:"Rammetto One",Georgia,serif;
+  --cond:"Asap Condensed","Arial Narrow",sans-serif;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--night);color:var(--foam);font:400 19px/1.55 var(--cond);overflow-x:clip}
+img,svg{max-width:100%}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--amber);outline-offset:3px}
+.in{width:min(1140px,100% - 40px);margin-inline:auto}
+.tab{font-variant-numeric:tabular-nums}
+
+.pruh{background:var(--foam);color:#14261c;font-size:15px;line-height:1.4;padding:8px 0;font-weight:500}
+.pruh p{margin:0}
+
+.hlav{position:relative;z-index:3}
+.hlav .in{display:flex;align-items:center;gap:26px;min-height:74px}
+.logo{margin-right:auto;text-decoration:none;font:400 21px/1 var(--disp);letter-spacing:.01em;display:flex;align-items:center;gap:10px}
+.logo svg{width:22px;height:30px}
+.menu{display:flex;gap:28px;font-weight:600;font-size:16px;letter-spacing:.12em;text-transform:uppercase}
+.menu a,.hlav .t{text-decoration:none;background:linear-gradient(var(--amber),var(--amber)) 0 100%/0 1px no-repeat;transition:background-size .2s}
+.menu a:hover,.hlav .t:hover{background-size:100% 1px}
+.hlav .t{font-weight:700;font-size:18px;color:var(--amber)}
+
+.bt{display:inline-flex;align-items:center;justify-content:center;min-height:50px;padding:0 24px;border-radius:999px;font:700 17px/1 var(--cond);letter-spacing:.06em;text-transform:uppercase;text-decoration:none;transition:background-color .2s,color .2s}
+.bt-o{background:var(--orange);color:#1b0d03}
+.bt-o:hover{background:var(--amber)}
+.bt-g{box-shadow:inset 0 0 0 1.5px rgba(244,237,220,.5);color:var(--foam)}
+.bt-g:hover{background:var(--foam);color:var(--night)}
+
+/* girlanda */
+.gir{display:block;width:100%;height:92px}
+
+/* úvod: večerná záhrada */
+.uvod{position:relative;isolation:isolate;overflow:hidden;min-height:min(620px,82vh);margin-top:-74px;padding-top:74px;display:flex;flex-direction:column;
+  background:radial-gradient(60% 55% at 70% 18%,rgba(255,184,77,.16),transparent 70%),radial-gradient(45% 40% at 15% 30%,rgba(240,122,44,.10),transparent 70%),linear-gradient(#0f2219,#0b1712 70%)}
+.uvod .gir{position:absolute;left:0;right:0;top:66px;height:110px}
+.uvod .in{position:relative;flex:1;display:flex;flex-direction:column;justify-content:center;padding:150px 0 140px}
+.uvod .k{margin:0 0 16px;font-weight:600;font-size:16px;letter-spacing:.24em;text-transform:uppercase;color:var(--amber)}
+h1{font:400 clamp(52px,8.6vw,118px)/.95 var(--disp);margin:0;letter-spacing:-.01em;text-shadow:0 0 38px rgba(255,184,77,.28)}
+h1 em{font-style:normal;color:var(--amber);display:block}
+.uvod .l{max-width:27em;margin:26px 0 30px;font-size:21px;color:#dfe5d6}
+.akc{display:flex;flex-wrap:wrap;gap:12px}
+.lamp{position:absolute;right:max(20px,calc(50% - 600px));top:60px;width:min(500px,40vw);height:auto;z-index:-1}
+.ziv{position:absolute;left:0;right:0;bottom:-1px;height:120px;z-index:-1}
+.ziv svg{width:100%;height:100%;display:block}
+.fakty{display:flex;flex-wrap:wrap;gap:8px 34px;margin:34px 0 0;padding:0;list-style:none;font-size:17px;color:var(--mute)}
+.fakty b{color:var(--foam);font-weight:700;font-size:20px;margin-right:6px}
+
+/* výčap — blok, ktorý zarába */
+.capy{background:var(--amber);color:#1c1408;padding:84px 0 90px;position:relative}
+.capy .in{display:grid;grid-template-columns:1fr 1.15fr;gap:60px;align-items:start}
+.capy .k{margin:0 0 14px;font-weight:700;font-size:15px;letter-spacing:.22em;text-transform:uppercase}
+h2{font:400 clamp(36px,4.6vw,58px)/1.02 var(--disp);margin:0 0 20px}
+.capy p{margin:0 0 14px;font-size:20px;max-width:24em}
+.ukazka{display:inline-block;margin-top:8px;padding:6px 12px;border:1.5px solid #1c1408;border-radius:999px;font-weight:700;font-size:14px;letter-spacing:.14em;text-transform:uppercase}
+.lis{list-style:none;margin:0;padding:22px 30px 26px;background:#1c1408;color:var(--foam);border-radius:22px 22px 22px 22px}
+.lis li{display:grid;grid-template-columns:1fr 76px 82px;gap:16px;align-items:end;padding:16px 0;border-bottom:1px dashed rgba(244,237,220,.28)}
+.lis li:last-child{border-bottom:0}
+.lis .h{font-size:14px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--amber);padding-top:4px}
+.lis span{display:block;height:12px;border-radius:6px;background:rgba(244,237,220,.14)}
+.lis span.s{width:62%}.lis span.m{width:78%}.lis span.x{width:48%}
+.lis .r{justify-self:end;text-align:right}
+.lis small{display:block;padding-top:12px;font-size:15px;color:var(--mute);line-height:1.4}
+
+/* hodiny ako rad žiaroviek */
+.hod{padding:30px 0 96px;background:var(--night)}
+.hod .gir{margin-bottom:34px}
+.hod .top{margin-bottom:40px}
+.hod .top h2{margin-bottom:10px}
+.hod .top p{margin:0;color:var(--mute);font-size:19px;max-width:30em}
+.dni{display:grid;grid-template-columns:repeat(7,1fr);list-style:none;margin:0;padding:0;border-top:2px solid #020604;position:relative}
+.dni li{position:relative;padding:58px 8px 0;text-align:center}
+.dni li::before{content:"";position:absolute;left:50%;top:0;width:2px;height:12px;background:#020604;transform:translateX(-50%)}
+.dni li::after{content:"";position:absolute;left:50%;top:12px;width:22px;height:28px;margin-left:-11px;border-radius:50% 50% 48% 48%/58% 58% 42% 42%;
+  background:radial-gradient(circle at 50% 40%,#fff1c6,#ffc35e 55%,#f08a2d);box-shadow:0 0 18px 6px rgba(255,184,77,.35),0 0 46px 14px rgba(255,184,77,.12)}
+.dni b{display:block;font:400 22px/1 var(--disp);margin-bottom:8px}
+.dni span{display:block;font-size:19px;font-weight:600;color:var(--amber)}
+.hod .pozn{margin:30px 0 0;font-size:15px;color:var(--mute)}
+
+/* kontakt */
+.kon{background:var(--garden);padding:90px 0 96px;border-top:1px solid var(--line)}
+.kon .in{display:grid;grid-template-columns:1.1fr 1fr;gap:56px;align-items:start}
+.k2{font:600 16px/1.2 var(--cond);letter-spacing:.24em;text-transform:uppercase;color:var(--amber);margin:0 0 18px}
+address{font-style:normal;font:400 clamp(34px,4.4vw,56px)/1.08 var(--disp);margin:0 0 22px}
+.kon .mesto{display:block;color:var(--amber);font-size:.62em;margin-top:8px}
+.tel{list-style:none;margin:0 0 22px;padding:0}
+.tel li{border-top:1px solid var(--line)}
+.tel li:last-child{border-bottom:1px solid var(--line)}
+.tel a{display:flex;justify-content:space-between;align-items:center;gap:20px;min-height:58px;text-decoration:none;font-size:22px;font-weight:700}
+.tel a small{font-size:15px;font-weight:500;letter-spacing:.14em;text-transform:uppercase;color:var(--mute)}
+.tel a:hover .tab{color:var(--amber)}
+.hv{padding:30px 32px;border-radius:22px;background:var(--night);box-shadow:inset 0 0 0 1px var(--line)}
+.hv .cislo{display:flex;align-items:baseline;gap:14px;font:700 76px/1 var(--cond)}
+.hv .cislo svg{width:34px;height:34px;fill:var(--amber)}
+.hv p{margin:8px 0 0;color:var(--mute);font-size:17px}
+.soc{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}
+
+.pata{background:var(--hedge);color:var(--mute);font-size:16px;padding:0 0 34px}
+.pata .gir{height:92px;opacity:.85;margin-bottom:14px}
+.pata .in{display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px 30px}
+.pata p{margin:0}
+
+.lista{display:none}
+
+@media (max-width:900px){
+  .menu{display:none}
+  .capy .in,.kon .in{grid-template-columns:1fr;gap:40px}
+  .dni{grid-template-columns:repeat(4,1fr);row-gap:34px;border-top:0}
+  .dni li{border-top:2px solid #020604}
+}
+@media (max-width:640px){
+  body{font-size:18px}
+  .in{width:calc(100% - 32px)}
+  .hlav .in{min-height:64px;gap:12px}
+  .hlav .t{font-size:16px}
+  .logo{font-size:18px}
+  .uvod{margin-top:-64px;padding-top:64px;min-height:0}
+  .uvod .gir{top:58px;height:84px}
+  .uvod .in{padding:110px 0 120px}
+  .lamp{width:170px;right:-34px;top:150px;opacity:.9}
+  h1{font-size:clamp(46px,13.4vw,60px)}
+  .uvod .l{font-size:19px;margin:20px 0 24px}
+  .akc .bt{flex:1 1 100%}
+  .fakty{gap:6px 22px;margin-top:26px}
+  .capy{padding:60px 0 64px}
+  .capy p{font-size:18px}
+  .lis{padding:14px 18px 20px}
+  .lis li{grid-template-columns:1fr 54px 60px;gap:10px}
+  .lis .h{font-size:12px;letter-spacing:.12em}
+  .hod{padding-bottom:70px}
+  .dni{grid-template-columns:repeat(4,1fr)}
+  .dni li{padding:54px 2px 0}
+  .dni b{font-size:19px}
+  .dni span{font-size:16px}
+  .kon{padding:64px 0 70px}
+  .tel a{font-size:20px}
+  .hv{padding:24px}
+  .hv .cislo{font-size:62px}
+  .pata{padding-bottom:calc(96px + env(safe-area-inset-bottom))}
+  .lista{display:grid;grid-template-columns:1fr 1fr;gap:8px;position:fixed;left:0;right:0;bottom:0;z-index:30;padding:9px 12px calc(9px + env(safe-area-inset-bottom));background:rgba(7,16,12,.96);border-top:1px solid var(--line)}
+  .lista a{display:flex;align-items:center;justify-content:center;min-height:50px;border-radius:999px;text-decoration:none;font-weight:700;letter-spacing:.08em;text-transform:uppercase;font-size:16px;box-shadow:inset 0 0 0 1.5px rgba(244,237,220,.45)}
+  .lista a:first-child{background:var(--orange);color:#1b0d03;box-shadow:none}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none !important}}
+</style>
+
+<div class="pruh"><div class="in"><p>Neoficiálny návrh — nie je to oficiálny web podniku · ukážka od webdavid.sk, objednávky ani rezervácie tu nefungujú</p></div></div>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <radialGradient id="gl"><stop offset="0" stop-color="#ffc35e" stop-opacity=".55"/><stop offset=".45" stop-color="#ffb84d" stop-opacity=".16"/><stop offset="1" stop-color="#ffb84d" stop-opacity="0"/></radialGradient>
+    <radialGradient id="bb" cx=".5" cy=".38" r=".6"><stop offset="0" stop-color="#fff3cf"/><stop offset=".55" stop-color="#ffc35e"/><stop offset="1" stop-color="#ee8a2e"/></radialGradient>
+    <g id="b"><circle cy="20" r="26" fill="url(#gl)"/><path d="M0 0v6" stroke="#020604" stroke-width="2"/><rect x="-3.5" y="5" width="7" height="7" rx="1" fill="#020604"/><ellipse cy="19" rx="5.6" ry="7.4" fill="url(#bb)"/></g>
+    <radialGradient id="lb" cx=".42" cy=".38" r=".7"><stop offset="0" stop-color="#ffe7ad"/><stop offset=".5" stop-color="#ffb84d"/><stop offset="1" stop-color="#e2681f"/></radialGradient>
+    <g id="lamp"><circle r="120" fill="url(#gl)"/><path d="M0-150V-84" stroke="#020604" stroke-width="2"/><rect x="-18" y="-88" width="36" height="12" rx="2" fill="#020604"/><ellipse rx="66" ry="78" fill="url(#lb)"/><clipPath id="lc"><ellipse rx="66" ry="78"/></clipPath><g fill="none" stroke="#b9541c" stroke-opacity=".38" stroke-width="2" clip-path="url(#lc)"><ellipse rx="66" ry="12" cy="-52"/><ellipse rx="66" ry="14" cy="-26"/><ellipse rx="66" ry="15"/><ellipse rx="66" ry="14" cy="26"/><ellipse rx="66" ry="12" cy="52"/></g><rect x="-16" y="74" width="32" height="10" rx="2" fill="#020604"/><path d="M0 84v26" stroke="#ef7a2c" stroke-width="3"/></g>
+    <symbol id="star" viewBox="0 0 20 20"><path d="m10 1.5 2.6 5.6 6.1.7-4.5 4.2 1.2 6L10 15l-5.4 3 1.2-6L1.3 7.8l6.1-.7z"/></symbol>
+    <g id="girl">
+      <path fill="none" stroke="#020604" stroke-width="2" d="M0 14Q200 96 400 18Q600 100 800 14Q1000 96 1200 20"/>
+      <use href="#b" x="80" y="40"/><use href="#b" x="160" y="54"/><use href="#b" x="240" y="55"/><use href="#b" x="320" y="43"/>
+      <use href="#b" x="480" y="44"/><use href="#b" x="560" y="57"/><use href="#b" x="640" y="56"/><use href="#b" x="720" y="42"/>
+      <use href="#b" x="880" y="40"/><use href="#b" x="960" y="54"/><use href="#b" x="1040" y="56"/><use href="#b" x="1120" y="44"/>
+    </g>
+  </defs>
+</svg>
+
+<header class="hlav">
+  <div class="in">
+    <a class="logo" href="#"><svg viewBox="0 0 22 30" aria-hidden="true"><path d="M11 0v6" stroke="#f4eddc" stroke-width="2"/><rect x="7" y="5" width="8" height="7" rx="1" fill="#f4eddc"/><ellipse cx="11" cy="20" rx="7" ry="9" fill="#ffb84d"/></svg>Piváreň Záhrada</a>
+    <nav class="menu" aria-label="Hlavná navigácia"><a href="#vycap">Výčap</a><a href="#hodiny">Hodiny</a><a href="#kontakt">Kontakt</a></nav>
+    <a class="t tab" href="tel:+421907547096">0907 547 096</a>
+  </div>
+</header>
+
+<main>
+<section class="uvod" aria-labelledby="h1">
+  <svg class="gir" viewBox="0 0 1200 110" preserveAspectRatio="xMidYMin slice" aria-hidden="true"><use href="#girl"/></svg>
+  <div class="in">
+    <p class="k">Košice · Kukučínova 13</p>
+    <h1 id="h1">Piváreň <em>Záhrada</em></h1>
+    <p class="l">Piváreň so záhradou na Kukučínovej ulici v Košiciach. Cez týždeň otvára popoludní, cez víkend večer.</p>
+    <div class="akc">
+      <a class="bt bt-o" href="tel:+421907547096">Zavolať</a>
+      <a class="bt bt-g" href="https://www.google.com/maps/search/Piv%C3%A1re%C5%88+Z%C3%A1hrada+Ko%C5%A1ice" rel="noopener" target="_blank">Trasa na mape</a>
+    </div>
+    <ul class="fakty">
+      <li><b class="tab">4,4</b>Google · 677 hodnotení</li>
+      <li><b>Denne</b>hodiny nižšie</li>
+      <li><b>2 telefóny</b>mobil aj pevná linka</li>
+    </ul>
+  </div>
+  <svg class="lamp" viewBox="0 0 520 600" aria-hidden="true"><use href="#lamp" x="140" y="250" transform="scale(.82) translate(30 0)"/><use href="#lamp" x="330" y="330"/><use href="#lamp" x="440" y="190" transform="scale(.62) translate(270 120)"/></svg>
+  <div class="ziv" aria-hidden="true">
+    <svg viewBox="0 0 1440 120" preserveAspectRatio="none"><path d="M0 120V70c40-18 70-30 110-22s60-26 104-26 62 30 100 30 56-40 104-40 70 34 112 34 50-22 92-22 60 30 104 26 64-44 116-44 64 40 108 40 52-24 96-24 70 32 116 30 60-38 106-38 66 30 102 34 44-12 90-10v132z" fill="#112319"/><path d="M0 120V92c60-10 110-26 170-16s90 12 150 0 100-20 170-8 90 18 160 8 110-24 180-14 100 22 170 12 120-22 190-10 90 16 160 6 60-8 90-6v56z" fill="#07100c" opacity=".55"/></svg>
+  </div>
+</section>
+
+<section class="capy" id="vycap" aria-labelledby="h-vycap">
+  <div class="in">
+    <div>
+      <p class="k">Výčap a lístok</p>
+      <h2 id="h-vycap">Čo sa čapuje</h2>
+      <p>Miesto pre aktuálny výčap, jedlo k pivu a ceny.</p>
+      <p>Nápojový lístok sme na verejných zdrojoch nenašli — doplní ho podnik.</p>
+      <span class="ukazka">Ukážka návrhu</span>
+    </div>
+    <ul class="lis" aria-label="Ukážka rozloženia nápojového lístka, bez údajov">
+      <li><div class="h">Pivo</div><div class="h r">Objem</div><div class="h r">Cena</div></li>
+      <li aria-hidden="true"><span class="m"></span><span class="r"></span><span class="r"></span></li>
+      <li aria-hidden="true"><span class="s"></span><span class="r"></span><span class="r"></span></li>
+      <li aria-hidden="true"><span class="x"></span><span class="r"></span><span class="r"></span></li>
+      <li><small>Názvy pív, objemy a ceny doplní podnik. Nič z toho nie je vymyslené dopredu.</small></li>
+    </ul>
+  </div>
+</section>
+
+<section class="hod" id="hodiny" aria-labelledby="h-hod">
+  <svg class="gir" viewBox="0 0 1200 110" preserveAspectRatio="xMidYMin slice" aria-hidden="true"><use href="#girl"/></svg>
+  <div class="in">
+    <div class="top">
+      <h2 id="h-hod">Kedy sa svieti</h2>
+      <p>Otvorené každý deň — cez týždeň od 14:00, cez víkend od 17:00.</p>
+    </div>
+    <ul class="dni tab">
+      <li><b>Po</b><span>14–23</span></li>
+      <li><b>Ut</b><span>14–23</span></li>
+      <li><b>St</b><span>14–23</span></li>
+      <li><b>Št</b><span>14–23</span></li>
+      <li><b>Pi</b><span>14–24</span></li>
+      <li><b>So</b><span>17–24</span></li>
+      <li><b>Ne</b><span>17–23</span></li>
+    </ul>
+    <p class="pozn">Hodiny podľa verejných údajov (mapneticly) — overiť, máme ich len z jedného zdroja.</p>
+  </div>
+</section>
+
+<section class="kon" id="kontakt" aria-labelledby="h-kon">
+  <div class="in">
+    <div>
+      <h2 id="h-kon" class="k2">Kde nás nájdete</h2>
+      <address>Kukučínova 13<span class="mesto">040 01 Košice</span></address>
+      <ul class="tel">
+        <li><a href="tel:+421907547096"><span class="tab">0907 547 096</span><small>mobil</small></a></li>
+        <li><a href="tel:+421556221130"><span class="tab">055 622 11 30</span><small>pevná linka</small></a></li>
+      </ul>
+      <a class="bt bt-o" href="https://www.google.com/maps/search/Piv%C3%A1re%C5%88+Z%C3%A1hrada+Ko%C5%A1ice" rel="noopener" target="_blank">Trasa v Google Maps</a>
+    </div>
+    <div class="hv">
+      <div class="cislo tab">4,4<svg aria-hidden="true"><use href="#star"/></svg></div>
+      <p>Google, 677 hodnotení — podľa verejných údajov k 30. 9. 2026, overiť.</p>
+      <div class="soc">
+        <a class="bt bt-g" href="https://www.facebook.com/PivarenZahrada/" rel="noopener" target="_blank">Facebook</a>
+        <a class="bt bt-g" href="https://www.instagram.com/pivaren_zahrada/" rel="noopener" target="_blank">Instagram</a>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="pata">
+  <svg class="gir" viewBox="0 0 1200 110" preserveAspectRatio="xMidYMin slice" aria-hidden="true"><use href="#girl"/></svg>
+  <div class="in">
+    <p>Neoficiálny návrh webu · webdavid.sk · 2026</p>
+    <p>Piváreň Záhrada · Kukučínova 13, Košice</p>
+  </div>
+</footer>
+
+<nav class="lista" aria-label="Rýchle akcie">
+  <a href="tel:+421907547096">Zavolať</a>
+  <a href="https://www.google.com/maps/search/Piv%C3%A1re%C5%88+Z%C3%A1hrada+Ko%C5%A1ice" rel="noopener" target="_blank">Trasa</a>
+</nav>
